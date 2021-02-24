@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS.css'>
+    <script src='js.js'></script>
+</head>
+<body>
+    <div id="rep"></div>
+    <fieldset>
+        <form action="" method="POST">
+            <label for="Email">Email :</label>
+            <input type="text" id="Ie" placeholder="Email" ><br>
+            <label for="Password">Password :</label>
+            <input type="password" id="Ip" placeholder="Password"><br>
+            <label for="filiere">Filiere :</label>
+            <input type="radio" name="R1" id="r1" value="TDI">
+            <label for="radio">TDI</label>
+            <input type="radio" name="R1" id="r2" value="TRI">
+            <label for="radio">TRI</label>
+            <input type="radio" name="R1" id="r3" value="TMI">
+            <label for="radio">TMI</label><br>
+            <label for="ville">ville :</label>
+            <select name="ville" id="S1">
+                <option value="0">selectionner une ville</option>
+                <option value="1">Marrakech</option>
+                <option value="2">Rabat</option>
+                <option value="3">Beni Mellal</option>
+                <option value="2">Casa</option>
+                <option value="2">Tanger</option>
+            </select>
+            <div id="G1"></div><br>
+            <input type="button" value="valider" onclick="valider()">
+            <input type="button" value="envoyer par ajax" onclick="envoiajax()">
+        </form>
+    </fieldset>
+</body>
+</html>
